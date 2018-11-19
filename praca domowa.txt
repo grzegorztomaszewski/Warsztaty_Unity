@@ -1,0 +1,2 @@
+dodaj rotacje towera (lewo, prawo)
+dodaj wznos i opad barrela (góra, dó³)
