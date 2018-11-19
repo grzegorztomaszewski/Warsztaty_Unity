@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: b1631d8e1997cca40865885bdca3b808
+  productGUID: 62786d24b2e67e94dae9101a6435e7ef
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Kurs1
+  productName: Po_kursie_1
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -650,8 +650,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 769c34cb-ba04-404a-b730-b7e2cca48a53
-  projectName: Kurs1
+  cloudProjectId: 33838bfa-35ee-400a-b9ce-b92c61b2c805
+  projectName: Po_kursie_1
   organizationId: aroxd3
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
