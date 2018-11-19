@@ -1,2 +1,3 @@
-dodaj rotacje towera (lewo, prawo)
-dodaj wznos i opad barrela (góra, dó³)
+- hp gracza(wyswietlanie hp gracza jako text)
++ opcjonalnie (*text + slider (UI->slider))
+- czoÅ‚gi kamikadze(CzoÅ‚gi wpadajace na nas odbierajÄ… nam HP)
