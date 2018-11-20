@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        player = FindObjectOfType<TimeControler>().gameObject;
+        player = FindObjectOfType<TankControler>().gameObject;
         agent = GetComponent<NavMeshAgent>();
 	}
 	

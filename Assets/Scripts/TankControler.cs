@@ -1,9 +1,9 @@
-﻿    using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;  //Kurs2
 using UnityEngine.UI; //Kurs2
 
-public class TimeControler : MonoBehaviour
+public class TankControler : MonoBehaviour
 {
     public float speed;
     public float angularSpeed;
@@ -27,7 +27,7 @@ public class TimeControler : MonoBehaviour
        transform.Translate(Vector3.forward * speed * Input.GetAxis("Vertical") * Time.deltaTime); // poruszanie przód tył
        transform.Translate(Vector3.right * speed * Input.GetAxis("Horizontal") * Time.deltaTime); //poruszanie lewo prawo
 
-        ammoText.text = "ammo: " + ammo; 
+       // ammoText.text = "ammo: " + ammo; 
      // RUCHY ROTACYJNE(Q&E)
         if (Input.GetKey(KeyCode.E))
             transform.Rotate(Vector3.up * angularSpeed);
@@ -78,6 +78,7 @@ public class TimeControler : MonoBehaviour
         transform.Translate(Vector3.right * speed);
      */
 }
+    // skrzynka z ammo  
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "AmmoBox")
