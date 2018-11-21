@@ -8,20 +8,23 @@ public class Enemy : MonoBehaviour {
     public NavMeshAgent agent;
     public GameObject player;
 
+
     // Use this for initialization
     void Start () {
         player = FindObjectOfType<TankControler>().gameObject;
         agent = GetComponent<NavMeshAgent>();
-	}
+        //agent.destination = player.transform.position;
+    }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		if(HP <=0)
         {
             Destroy(this.gameObject);
-
             agent.destination = player.transform.position;
         }
+
 	}
     
     private void OnCollisionEnter(Collision collision)
@@ -29,7 +32,7 @@ public class Enemy : MonoBehaviour {
         if(collision.gameObject.tag == "Bullet")
         {
             Destroy(collision.gameObject);  //NISZCZENIE OBIEKTU
-            HP = HP-1;                      //ZMNIEJSZANIE HP 
+            HP = HP-25;                      //ZMNIEJSZANIE HP 
             Debug.Log("HP= " + HP);           //Debug, sprawdzenie
         }
     }
