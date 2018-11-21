@@ -7,16 +7,16 @@ public class TankControler : MonoBehaviour
 {
     public float speed;
     public float angularSpeed;
-    public float rotation_speed;
-    public float speed_barrel;
-    public GameObject bullet;
     public float shotPower;
+    public GameObject bullet;
     public Transform spawner;
     public GameObject newBullet;
-
-    //kurs 2
+   // public GameObject barrel, tower;
+    public float rotation_speed;
+    public float speed_barrel;
     public int ammo;
-
+    public Text ammoText;
+    // Use this for initialization
     void Start()
     {
 
@@ -24,11 +24,11 @@ public class TankControler : MonoBehaviour
 
     void Update()
     {
-       transform.Translate(Vector3.forward * speed * Input.GetAxis("Vertical") * Time.deltaTime); // poruszanie przód tył
-       transform.Translate(Vector3.right * speed * Input.GetAxis("Horizontal") * Time.deltaTime); //poruszanie lewo prawo
 
-       // ammoText.text = "ammo: " + ammo; 
-     // RUCHY ROTACYJNE(Q&E)
+        transform.Translate(Vector3.forward * speed * Input.GetAxis("Vertical") * Time.deltaTime); // poruszanie przód tył
+        transform.Translate(Vector3.right * speed * Input.GetAxis("Horizontal") * Time.deltaTime); //poruszanie lewo prawo
+
+        // RUCHY ROTACYJNE(Q&E)
         if (Input.GetKey(KeyCode.E))
             transform.Rotate(Vector3.up * angularSpeed);
         if (Input.GetKey(KeyCode.Q))
@@ -46,45 +46,26 @@ public class TankControler : MonoBehaviour
         if (Input.GetKey(KeyCode.K))
             transform.Rotate(Vector3.right * speed_barrel);
 
+        ammoText.text = "AMMO: " + ammo; // dodaje liczbe amunicji do obiektu "Text ammoText", którą wyświetla na ekranie 
+
         //STRZELANIE
-        if (Input.GetKeyDown(KeyCode.Space) && ammo > 0 )
+        if (Input.GetKeyDown(KeyCode.Space) && ammo > 0)
         {
             newBullet = Instantiate(bullet, spawner.position, spawner.transform.rotation);
             newBullet.GetComponent<Rigidbody>().AddForce(spawner.transform.forward * shotPower);
             ammo--; // za każdym strzałem odejmuje 1 ammo
         }
-        
-    {
-       
+
     }
-    // TEST DZIAŁANIA
-    //if (Input.GetKeyDown(KeyCode.W))
-    //{
-    //    transform.Translate(Vector3.forward * speed);
-    //    Debug.Log("is True");
-    //}
-
-
-    /*
-    // RUCHY PRZÓD, TYŁ, LEWO, PRAWO
-
-    if (Input.GetKey(KeyCode.W))
-        transform.Translate(Vector3.forward * speed);
-    else if (Input.GetKey(KeyCode.S))
-        transform.Translate(Vector3.back * speed);
-    if (Input.GetKey(KeyCode.A))
-        transform.Translate(Vector3.left * speed);
-    if (Input.GetKey(KeyCode.D))
-        transform.Translate(Vector3.right * speed);
-     */
-}
     // skrzynka z ammo  
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "AmmoBox")
+        if (collision.gameObject.tag == "AmmoBox")
         {
             ammo = ammo + 30;
             Destroy(collision.gameObject);
         }
     }
 }
+// 1.Poruszanie towerem lewo prawo + poruszanie barrelem góra dół
+// 2.HP GRACZA, CZOŁGI KAMIKADZE, WYSWIETLANIE HP GRACZA JAKO TEXT + SLIDER

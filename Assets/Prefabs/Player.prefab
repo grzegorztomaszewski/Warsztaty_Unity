@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 114829904974772446}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -543,13 +543,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   angularSpeed: 0
-  rotation_speed: 2
-  speed_barrel: 0
-  bullet: {fileID: 0}
   shotPower: 0
+  bullet: {fileID: 0}
   spawner: {fileID: 0}
   newBullet: {fileID: 0}
+  rotation_speed: 2
+  speed_barrel: 0
   ammo: 0
+  ammoText: {fileID: 0}
 --- !u!114 &114277165156563458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -563,13 +564,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   angularSpeed: 0
-  rotation_speed: 0
-  speed_barrel: 2
-  bullet: {fileID: 0}
   shotPower: 0
+  bullet: {fileID: 0}
   spawner: {fileID: 0}
   newBullet: {fileID: 0}
+  rotation_speed: 0
+  speed_barrel: 2
   ammo: 0
+  ammoText: {fileID: 0}
 --- !u!114 &114829904974772446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -583,10 +585,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   angularSpeed: 4
-  rotation_speed: 0
-  speed_barrel: 0
-  bullet: {fileID: 1997116868929532, guid: c6c1aee79b0b9774b8fd6a864dd7545d, type: 2}
   shotPower: 1000
+  bullet: {fileID: 1997116868929532, guid: c6c1aee79b0b9774b8fd6a864dd7545d, type: 2}
   spawner: {fileID: 4554513692178260}
   newBullet: {fileID: 1997116868929532, guid: c6c1aee79b0b9774b8fd6a864dd7545d, type: 2}
+  rotation_speed: 0
+  speed_barrel: 0
   ammo: 20
+  ammoText: {fileID: 0}

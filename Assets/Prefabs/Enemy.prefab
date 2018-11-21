@@ -55,7 +55,6 @@ GameObject:
   - component: {fileID: 54456664076143980}
   - component: {fileID: 114069016013005528}
   - component: {fileID: 195433806467641488}
-  - component: {fileID: 114837556775216128}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -139,7 +138,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1340360506411258}
   m_LocalRotation: {x: -0.00038023214, y: -0.64828813, z: 0.0054911496, w: 0.76137525}
-  m_LocalPosition: {x: 2.07, y: 0.17802843, z: 0.38}
+  m_LocalPosition: {x: 3.85, y: 0.27, z: 2.52}
   m_LocalScale: {x: 0.6140661, y: 0.3560568, z: 1.0792606}
   m_Children:
   - {fileID: 4406420210454452}
@@ -474,26 +473,6 @@ MonoBehaviour:
   HP: 100
   agent: {fileID: 195433806467641488}
   player: {fileID: 0}
---- !u!114 &114837556775216128
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1340360506411258}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b1a5ee5cc71c234e910782e0498246c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PredkoscObrotu: 5
-  PredkoscRuchu: 2
-  PoleWidzenia: 15
-  OdlegloscOdGracza: 1
-  CoIleStrzelac: 0
-  Wyrzut: 0
-  Lufa: {fileID: 0}
-  Pocisk: {fileID: 0}
-  Gracz: {fileID: 0}
 --- !u!195 &195433806467641488
 NavMeshAgent:
   m_ObjectHideFlags: 1

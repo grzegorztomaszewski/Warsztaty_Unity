@@ -4,28 +4,28 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour {
-    public int HP;
+
+    public int HP = 5;
     public NavMeshAgent agent;
     public GameObject player;
 
-
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         player = FindObjectOfType<TankControler>().gameObject;
         agent = GetComponent<NavMeshAgent>();
-        //agent.destination = player.transform.position;
-    }
-	
+    }	
+
 	// Update is called once per frame
-	void Update ()
+	void Update()
     {
 		if(HP <=0)
         {
-            Destroy(this.gameObject);
-            agent.destination = player.transform.position;
+            Destroy(this.gameObject);           
         }
 
-	}
+        agent.destination = player.transform.position;
+    }
     
     private void OnCollisionEnter(Collision collision)
     {
