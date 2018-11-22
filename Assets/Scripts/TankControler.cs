@@ -18,6 +18,8 @@ public class TankControler : MonoBehaviour
     public Text ammoText;
     public Text HPText;
     public int HP;
+    public Slider HpSlider;
+
     // Use this for initialization
     void Start()
     {
@@ -73,6 +75,7 @@ public class TankControler : MonoBehaviour
             //Destroy(collision.gameObject);
             HP = HP - 2;
             Debug.Log("HP= " + HP);
+            HpSlider.value -= 2;
         }
     }
 }
