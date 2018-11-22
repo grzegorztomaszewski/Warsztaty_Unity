@@ -81,3 +81,4 @@ public class TankControler : MonoBehaviour
 }
 // 1.Poruszanie towerem lewo prawo + poruszanie barrelem góra dół
 // 2.HP GRACZA, CZOŁGI KAMIKADZE, WYSWIETLANIE HP GRACZA JAKO TEXT + SLIDER
+// 3. FPS żeby strzelił(zrobić fps ze swoim skryptem) + podłączyc z assetstora jakieś modele
