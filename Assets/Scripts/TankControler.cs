@@ -16,6 +16,8 @@ public class TankControler : MonoBehaviour
     public float speed_barrel;
     public int ammo;
     public Text ammoText;
+    public Text HPText;
+    public int HP;
     // Use this for initialization
     void Start()
     {
@@ -47,6 +49,7 @@ public class TankControler : MonoBehaviour
             transform.Rotate(Vector3.right * speed_barrel);
 
         ammoText.text = "AMMO: " + ammo; // dodaje liczbe amunicji do obiektu "Text ammoText", którą wyświetla na ekranie 
+        HPText.text = "HP: " + HP; // pokazuj HP na ekranie 
 
         //STRZELANIE
         if (Input.GetKeyDown(KeyCode.Space) && ammo > 0)
@@ -64,6 +67,12 @@ public class TankControler : MonoBehaviour
         {
             ammo = ammo + 30;
             Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            //Destroy(collision.gameObject);
+            HP = HP - 2;
+            Debug.Log("HP= " + HP);
         }
     }
 }
