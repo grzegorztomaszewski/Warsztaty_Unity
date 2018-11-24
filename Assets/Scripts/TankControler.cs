@@ -19,6 +19,7 @@ public class TankControler : MonoBehaviour
     public Text HPText;
     public int HP;
     public Slider HpSlider;
+    public Slider ammoSlider;
 
     // Use this for initialization
     void Start()
@@ -59,6 +60,7 @@ public class TankControler : MonoBehaviour
             newBullet = Instantiate(bullet, spawner.position, spawner.transform.rotation);
             newBullet.GetComponent<Rigidbody>().AddForce(spawner.transform.forward * shotPower);
             ammo--; // za każdym strzałem odejmuje 1 ammo
+            ammoSlider.value -= 1;
         }
 
     }
@@ -68,11 +70,19 @@ public class TankControler : MonoBehaviour
         if (collision.gameObject.tag == "AmmoBox")
         {
             ammo = ammo + 30;
+            ammoSlider.value = ammo;
             Destroy(collision.gameObject);
         }
+        // skrzynka z HP
+        if(collision.gameObject.tag == "HpBox")
+        {
+            HP = HP + 30;
+            HpSlider.value = HP;
+            Destroy(collision.gameObject);
+        }
+        //kolizja enemy z playerem zabiera HP playerowi
         if (collision.gameObject.tag == "Enemy")
         {
-            //Destroy(collision.gameObject);
             HP = HP - 2;
             Debug.Log("HP= " + HP);
             HpSlider.value -= 2;
