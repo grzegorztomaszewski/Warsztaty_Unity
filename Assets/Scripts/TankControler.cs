@@ -52,7 +52,7 @@ public class TankControler : MonoBehaviour
             transform.Rotate(Vector3.right * speed_barrel);
 
         ammoText.text = "AMMO: " + ammo; // dodaje liczbe amunicji do obiektu "Text ammoText", którą wyświetla na ekranie 
-        HPText.text = "HP: " + HP; // pokazuj HP na ekranie 
+        HPText.text = "HP: " + HP   ; // pokazuj HP na ekranie 
 
         //STRZELANIE
         if (Input.GetKeyDown(KeyCode.Space) && ammo > 0)
@@ -80,6 +80,7 @@ public class TankControler : MonoBehaviour
             HpSlider.value = HP;
             Destroy(collision.gameObject);
         }
+
         //kolizja enemy z playerem zabiera HP playerowi
         if (collision.gameObject.tag == "Enemy")
         {
