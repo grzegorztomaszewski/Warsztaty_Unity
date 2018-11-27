@@ -55,7 +55,7 @@ public class TankControler : MonoBehaviour
         HPText.text = "HP: " + HP   ; // pokazuj HP na ekranie 
 
         //STRZELANIE
-        if (Input.GetKeyDown(KeyCode.Space) && ammo > 0)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && ammo > 0)
         {
             newBullet = Instantiate(bullet, spawner.position, spawner.transform.rotation);
             newBullet.GetComponent<Rigidbody>().AddForce(spawner.transform.forward * shotPower);
@@ -90,6 +90,6 @@ public class TankControler : MonoBehaviour
         }
     }
 }
-// 1.Poruszanie towerem lewo prawo + poruszanie barrelem góra dół
+// 1.Poruszanie towwerem lewo prawo + poruszanie barrelem góra dół
 // 2.HP GRACZA, CZOŁGI KAMIKADZE, WYSWIETLANIE HP GRACZA JAKO TEXT + SLIDER
 // 3. FPS żeby strzelił(zrobić fps ze swoim skryptem) + podłączyc z assetstora jakieś modele
