@@ -55,7 +55,7 @@ public class TankControler : MonoBehaviour
         HPText.text = "HP: " + HP   ; // pokazuj HP na ekranie 
 
         //STRZELANIE
-        if (Input.GetKeyDown(KeyCode.LeftControl) && ammo > 0)
+        if (Input.GetKeyDown(KeyCode.F) && ammo > 0)
         {
             newBullet = Instantiate(bullet, spawner.position, spawner.transform.rotation);
             newBullet.GetComponent<Rigidbody>().AddForce(spawner.transform.forward * shotPower);
@@ -76,9 +76,22 @@ public class TankControler : MonoBehaviour
         // skrzynka z HP
         if(collision.gameObject.tag == "HpBox")
         {
-            HP = HP + 30;
-            HpSlider.value = HP;
-            Destroy(collision.gameObject);
+            if (HP == 100)
+            {
+                return;
+            }
+            else if (HP + 30 > 100)
+            {
+                HP = 100;
+                Destroy(collision.gameObject);
+            }
+            else
+            {
+                HP = HP + 30;
+
+                HpSlider.value = HP;
+                Destroy(collision.gameObject);
+            }
         }
 
         //kolizja enemy z playerem zabiera HP playerowi

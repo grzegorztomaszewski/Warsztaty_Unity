@@ -1,0 +1,131 @@
+[33mcommit 40b2530139d11544025b808f9a7693375273c509[m[33m ([m[1;36mHEAD -> [m[1;32mz3.1[m[33m, [m[1;31morigin/z3.1[m[33m)[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Tue Nov 27 23:46:12 2018 +0100
+
+    podmiana modeli + błąd poruszania
+
+[33mcommit 46582c4e7e56ec083ebdff6d4870f1a520c9ae63[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Tue Nov 27 23:33:48 2018 +0100
+
+    podłączenie skryptu pod FPS
+
+[33mcommit 832f3c8fd6f045a7cc35a366030a37a586db2ad6[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Mon Nov 26 07:55:09 2018 +0100
+
+    dodanie fPS prefab
+
+[33mcommit df57a81bc808d3223c0ec0afd1e0a66f890b22ed[m[33m ([m[1;31morigin/z3[m[33m, [m[1;32mz3[m[33m)[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Sun Nov 25 19:44:55 2018 +0100
+
+    próba ustawienia HP
+
+[33mcommit 09eba083da2ed7e7bee4b6f6309a7ddbbae6764d[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Sat Nov 24 20:42:27 2018 +0100
+
+    Dodanie slidera ammo + Box HP
+
+[33mcommit 7a6871a787ec76af6a277d08df11e19339e259f0[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Fri Nov 23 22:46:01 2018 +0100
+
+    dodanie wyjątków unity do gitignore
+
+[33mcommit 23a59879ef5853e2c6e7c0b860ce04e4d2d627c5[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Thu Nov 22 20:34:34 2018 +0100
+
+    reszta plików
+
+[33mcommit 00901244af4b2bb7b15d2173135ed5c3b59687ed[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Thu Nov 22 20:33:01 2018 +0100
+
+    git ignore + temp, library
+
+[33mcommit 5634e9165f6cdc9da1336a8290c07757b5e13842[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Thu Nov 22 20:16:51 2018 +0100
+
+    teren + eksplozja enemy
+
+[33mcommit 352e3f5a9d57a97a02e202d7862321f0b7516857[m[33m ([m[1;31morigin/z2.3[m[33m, [m[1;32mz2.3[m[33m)[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Thu Nov 22 18:35:38 2018 +0100
+
+    slider HP
+
+[33mcommit 0e574fb1642ffda8bf88e80310d08af27ad2ebec[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Thu Nov 22 18:33:52 2018 +0100
+
+    dodawanie gitignore unity
+
+[33mcommit fe137db6d059cdcbc365ea292b8a59e72fedf810[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Thu Nov 22 17:58:48 2018 +0100
+
+    czołg kamikadze + HP gracza
+
+[33mcommit 464ec9b6ca1b201ee72c75beaed47588197c8ddb[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Wed Nov 21 23:24:26 2018 +0100
+
+    fix enemy + ammo view
+
+[33mcommit dbd659c0493b3c38498fc87f118a93434c91b997[m[33m ([m[1;31morigin/z2.2[m[33m, [m[1;32mz2.2[m[33m)[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Wed Nov 21 22:46:47 2018 +0100
+
+    fix follow enemy, fix ammobox, fix text.ammo (weryfikacja z kodem fb)
+
+[33mcommit 17a156800c66644e79a92b68f1bb722ddb402eb8[m[33m ([m[1;31morigin/z2.1[m[33m, [m[1;32mz2.1[m[33m)[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Wed Nov 21 21:52:24 2018 +0100
+
+    dodanie assetów
+
+[33mcommit 1001262c3c0c826ab9a23777f2768ba1581116e5[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Tue Nov 20 11:39:52 2018 +0100
+
+    usunięcie starych plików
+
+[33mcommit f1ab641f0ca516d965a1a3b436ad2d14a129d79e[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Tue Nov 20 11:32:40 2018 +0100
+
+    fix z2 + zmiana nazw + spójność plików
+
+[33mcommit 612a11145aba406ace990f5585d7caf33caa0991[m[33m ([m[1;31morigin/z2[m[33m)[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Mon Nov 19 23:36:16 2018 +0100
+
+    drugie zajecia
+
+[33mcommit 59b3ee0667c7fa6931ddc318616d737eb1364bae[m[33m ([m[1;31morigin/z1.1[m[33m)[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Mon Nov 19 23:13:27 2018 +0100
+
+    fix z1 + praca domowa
+
+[33mcommit 47489bc0eea2e3c17bd639b0dfa932afbde1a269[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Mon Nov 19 23:04:48 2018 +0100
+
+    Bez zmian
+
+[33mcommit 5aede426a4bd252f7336baf166777a93922df475[m[33m ([m[1;31morigin/z1[m[33m)[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Mon Nov 19 22:41:59 2018 +0100
+
+    pierwsze zajecia
+
+[33mcommit ce30355bf3a1bc7a0425b8380746e1f902c50c96[m
+Author: grzegorztomaszewski <aroxd3@gmail.com>
+Date:   Mon Nov 19 22:36:46 2018 +0100
+
+    praca domowa
